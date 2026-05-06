@@ -50,7 +50,7 @@ data class BitmapInfo(
 ) {
     @IntDef(
         flag = true,
-        value = [FLAG_WORK, FLAG_INSTANT, FLAG_CLONE, FLAG_PRIVATE, FLAG_FULL_BLEED],
+        value = [FLAG_WORK, FLAG_INSTANT, FLAG_CLONE, FLAG_PRIVATE, FLAG_FULL_BLEED, FLAG_ICON_PACK],
     )
     internal annotation class BitmapInfoFlags
 
@@ -216,6 +216,7 @@ data class BitmapInfo(
         const val FLAG_CLONE: Int = 1 shl 2
         const val FLAG_PRIVATE: Int = 1 shl 3
         const val FLAG_FULL_BLEED: Int = 1 shl 4
+        const val FLAG_ICON_PACK: Int = 1 shl 5
         // LINT.ThenChange(src/com/android/launcher3/icons/cache/BaseIconCache.kt:cache_release_version)
 
         // Drawable creation flags
